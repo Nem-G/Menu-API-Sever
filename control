@@ -1,0 +1,17 @@
+Package: repo.thenamk3.net
+Name: LQM Menu
+Version: 1.6
+Description: Hack LQMB Mua Hack Liên Hệ Zalo:0355278216
+Section: Hacks
+Depends: firmware (>= 5.0),mobilesubstrate (>= 0.9.5000)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: NemOS
+dev: 
+Homepage: https://repo-sakura.tk
+Depiction: https://repo-sakura.tk
+Maintainer: 
+Icon: 
+
