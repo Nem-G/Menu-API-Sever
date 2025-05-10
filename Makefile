@@ -39,11 +39,11 @@ UDID_SRC = $(wildcard Esp/*.m) $(wildcard Esp/Anti/*.m) $(wildcard Esp/*.mm) Nam
 Gz_FILES = $(UDID_SRC)
 
 # Required system frameworks
-Gz_FRAMEWORKS = UIKit Security QuartzCore CoreGraphics CoreText AdSupport Accelerate Foundation WebKit IOKit
-
+#////////////////////////////////// Bắt Buộc Phải Có
 Gz_CFLAGS += -I$(THEOS_PROJECT_DIR)/API -I$(THEOS_PROJECT_DIR)/Menu
 Gz_LDFLAGS += $(THEOS_PROJECT_DIR)/API/NemGVn.a $(THEOS_PROJECT_DIR)/Menu/NemGVn.a
-
+Gz_FRAMEWORKS = UIKit Security QuartzCore CoreGraphics CoreText AdSupport Accelerate Foundation WebKit IOKit MobileCoreServices
+#//////////////////////////////////
 # Additional libraries for Mach-O, system headers, and POSIX functions
 Gz_LDFLAGS += -Wl,-segalign,4000 -lc++ -lobjc -ldl -lsqlite3 -lz 
 Gz_CCFLAGS += -std=c++14 -stdlib=libc++ -Wall -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-c++14-extensions

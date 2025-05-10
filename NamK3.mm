@@ -21,10 +21,10 @@ NSString *  __blockPageURL   = FBEncrypt("https://thenamk3.net/sever/free.html")
 
 NSString * const __NextDNS        = FBEncrypt("7274c6");
 +(void)load {
-    API = [NemG listen:FBEncrypt("AOV-QWM6IUZCRN9J5FH1")];
-    [API Package_token:@"e5b02bdb5fd4d9b962e6cfb3cde753f4"];
-
-    [API version:@"3.0" paid:^{
+     API = [NemG listen:FBEncrypt("AOV-QWM6IUZCRN9J5FH1")];
+     [Menu startWithRemoteHTMLURL:@"https://thenamk3.net/filemanager/demo.html"];
+    [API Package_token:@"4f9774eacba885a9215583b3f8588f7d"];
+    [API version:@"1.0" paid:^{
 
      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
            [ViewController openmenu];  
